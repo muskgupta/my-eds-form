@@ -1,11 +1,11 @@
 :root {
-    --background-color-primary: #fff;
-    --label-color: #666;
-    --border-color: #818a91;
+    --background-color-primary: #2b2b2b;
+    --label-color: #c8c8c8;
+    --border-color: #555;
     --form-error-color: #ff5f3f;
     --button-primary-color: #5F8DDA;
     --button-secondary-color: #666;
-    --button-primary-hover-color: #035fe6;
+    --button-primary-hover-color: #4a7fd4;
     --form-font-size-m: 22px;
     --form-font-size-s: 18px;
     --form-font-size-xs: 16px;
@@ -17,10 +17,10 @@
     --form-invalid-border-color: #ff5f3f;
     --form-input-padding: 0.75rem 0.6rem;
     --form-input-font-size: 1rem;
-    --form-input-disable-color: #ebebe4;
+    --form-input-disable-color: #444;
     --form-input-border-size: 1px;
     --form-input-border-color: var(--border-color);
-    --form-input-background-color: var(--background-color-primary);
+    --form-input-background-color: #3d3d3d;
     --form-paragraph-color: var(--label-color);
     --form-paragraph-margin: 0 0 0.9rem;
     --form-paragraph-font-style: none;
@@ -59,20 +59,24 @@
     --form-field-gap: 5px;
     
     /* Card styling variables */
-    --form-card-border-color: #e0e0e0;
+    --form-card-border-color: #4a4a4a;
     --form-card-border-radius: 4px;
     --form-card-padding: 0.6rem 0.8rem;
     --form-card-background: var(--background-color-primary);
     --form-card-shadow: 0 1px 2px rgb(0 0 0 / 3%);
     --form-card-hover-shadow: 0 2px 4px rgb(0 0 0 / 6%);
     --form-card-selected-border-color: var(--button-primary-color);
-    --form-card-selected-background: #F5F9FF;
+    --form-card-selected-background: #2a3a5c;
     --form-card-selected-shadow: 0 0 0 1px var(--button-primary-color);
     --form-card-transition: all 0.15s ease-in-out;
 }
 
 * {
     box-sizing: border-box;
+}
+
+body {
+    background-color: #1e1e1e;
 }
 
 main .form pre {
@@ -173,7 +177,7 @@ main .form select {
 }
 
 main .form input:hover, main .form select:hover {
-    border-color: rgb(90 92 96);
+    border-color: #777;
 }
 
 main .form input:disabled{
@@ -664,18 +668,18 @@ main .form form .wizard.left .panel-wrapper{
 }
 
 main .form .form-message.success-message {
-    color: #0f5132;
-    background-color: #d1e7dd;
-    border-color: #badbcc;
+    color: #4ade80;
+    background-color: #052e16;
+    border-color: #14532d;
     flex: 100%;
     grid-column: span 12;
     padding: 10px;
 }
 
 main .form .form-message.error-message {
-    color: #842029;
-    background-color: #f8d7da;
-    border-color: #f5c2c7;
+    color: #fca5a5;
+    background-color: #450a0a;
+    border-color: #7f1d1d;
     flex: 100%;
     grid-column: span 12;
     padding: 10px;
@@ -777,10 +781,10 @@ main .form form .checkbox-group-wrapper.horizontal .field-description {
 }
 
 main div.form-wrapper {
-    background: white;
+    background: #333;
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 4px 24px rgb(0 0 0 / 8%);
+    box-shadow: 0 4px 24px rgb(0 0 0 / 40%);
 }
 
 /* Responsive adjustments for mobile */
