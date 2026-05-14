@@ -18,3 +18,24 @@ footer .footer p {
     padding: 40px 32px 24px;
   }
 }
+
+/* Dark theme + red text for the form on the /footer page */
+.page-footer .form {
+    --background-color-primary: #121212;
+    --label-color: #f33;
+    --border-color: #555;
+    --button-primary-color: #8b0000;
+    --button-primary-hover-color: #c00;
+    --form-button-color: #f33;
+    --form-card-border-color: #444;
+    --form-card-selected-background: #2a0000;
+
+    background-color: #121212;
+    color: #f33;
+}
+
+.page-footer .form input,
+.page-footer .form textarea,
+.page-footer .form select {
+    color: #f33;
+}
