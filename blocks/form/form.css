@@ -1,11 +1,11 @@
 :root {
-    --background-color-primary: #1a1a1a;
-    --label-color: #d0d0d0;
-    --border-color: #555;
+    --background-color-primary: #000d10;
+    --label-color: #d5d3d4;
+    --border-color: #303131;
     --form-error-color: #ff5f3f;
-    --button-primary-color: #5F8DDA;
-    --button-secondary-color: #666;
-    --button-primary-hover-color: #035fe6;
+    --button-primary-color: #fff;
+    --button-secondary-color: #303131;
+    --button-primary-hover-color: #d5d3d4;
     --form-font-size-m: 22px;
     --form-font-size-s: 18px;
     --form-font-size-xs: 16px;
@@ -17,7 +17,7 @@
     --form-invalid-border-color: #ff5f3f;
     --form-input-padding: 0.75rem 0.6rem;
     --form-input-font-size: 1rem;
-    --form-input-disable-color: #3a3a3a;
+    --form-input-disable-color: #111820;
     --form-input-border-size: 1px;
     --form-input-border-color: var(--border-color);
     --form-input-background-color: var(--background-color-primary);
@@ -37,11 +37,11 @@
     --form-fieldset-legend-font-weight: var(--form-title-font-weight);
     --form-fieldset-legend-border: none;
     --form-fieldset-legend-padding: 0;
-    --form-button-color: #fff;
+    --form-button-color: #000d10;
     --form-button-font-size: var(--form-font-size-s);
     --form-button-background-color: var(--button-primary-color);
     --form-button-background-hover-color: var(--button-primary-hover-color);
-    --form-button-border: 2px solid transparent;
+    --form-button-border: 1px solid #d5d3d4;
     --form-button-padding:15px 50px;
     --form-upload-color: var(--form-label-color);
     --form-upload-font-size: var(--form-font-size-xs);
@@ -50,7 +50,7 @@
     --form-width: 100%;
     --form-wizard-border: 0;
     --form-wizard-background-color: var(--background-color-primary);
-    --form-wizard-border-color: #555;
+    --form-wizard-border-color: #303131;
     --form-wizard-number-color: var(--button-primary-color);
     --form-wizard-padding: 0px;
     --form-wizard-padding-bottom: 160px;
@@ -59,14 +59,14 @@
     --form-field-gap: 5px;
     
     /* Card styling variables */
-    --form-card-border-color: #3a3a3a;
+    --form-card-border-color: #303131;
     --form-card-border-radius: 4px;
     --form-card-padding: 0.6rem 0.8rem;
     --form-card-background: var(--background-color-primary);
     --form-card-shadow: 0 1px 2px rgb(0 0 0 / 3%);
     --form-card-hover-shadow: 0 2px 4px rgb(0 0 0 / 6%);
     --form-card-selected-border-color: var(--button-primary-color);
-    --form-card-selected-background: #1e3a5f;
+    --form-card-selected-background: #111820;
     --form-card-selected-shadow: 0 0 0 1px var(--button-primary-color);
     --form-card-transition: all 0.15s ease-in-out;
 }
@@ -169,11 +169,17 @@ main .form select {
     max-width: unset;
     margin-top: .5rem;
     margin-bottom: 1rem;
-    border-radius: 0.25rem;
+    border-radius: 0;
 }
 
 main .form input:hover, main .form select:hover {
-    border-color: rgb(90 92 96);
+    border-color: #d5d3d4;
+}
+
+main .form input:focus,
+main .form select:focus {
+    outline: 1px solid #d5d3d4;
+    outline-offset: 0;
 }
 
 main .form input:disabled{
@@ -206,6 +212,11 @@ main .form textarea {
     min-height: 100px;
 }
 
+main .form textarea:focus {
+    outline: 1px solid #d5d3d4;
+    outline-offset: 0;
+}
+
 main .form fieldset:not(.checkbox-group-wrapper, .radio-group-wrapper) legend {
     font-weight: var(--form-fieldset-legend-font-weight);
     font-size: var(--form-fieldset-legend-font-size);
@@ -222,6 +233,7 @@ main .form fieldset.radio-group-wrapper legend {
     font-weight: var(--form-label-font-weight);
     font-size: var(--form-label-font-size);
     color: var(--form-label-color);
+    letter-spacing: 0.05em;
 }
 
 main .form form .wizard > legend{
@@ -419,7 +431,7 @@ main .form button {
     border: var(--form-button-border);
     padding: var(--form-button-padding);
     font-size: var(--form-button-font-size);
-    border-radius: unset;
+    border-radius: 999px;
     width: 100%;
 }
 
@@ -446,7 +458,7 @@ main .file-wrapper.decorated input[type="file"] {
 }
 
 main .file-wrapper .field-dropregion {
-    background: rgb(0 0 0 / 2%);
+    background: rgb(255 255 255 / 5%);
     border: 1px dashed var(--form-input-border-color);
     border-radius: 4px;
     margin: 11px 0 8px;
@@ -777,15 +789,16 @@ main .form form .checkbox-group-wrapper.horizontal .field-description {
 }
 
 main div.form-wrapper {
-    background: #1a1a1a;
+    background: #000d10;
     padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 4px 24px rgb(255 255 255 / 5%);
+    border-radius: 0;
+    box-shadow: none;
 }
 
 main .form input[type='checkbox'] {
     border: 3px solid #c00;
 }
+
 
 
 /* Responsive adjustments for mobile */
