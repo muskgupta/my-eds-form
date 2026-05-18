@@ -1,11 +1,11 @@
 :root {
-    --background-color-primary: #000d10;
-    --label-color: #d5d3d4;
-    --border-color: #303131;
+    --background-color-primary: #fff;
+    --label-color: #303131;
+    --border-color: #d5d3d4;
     --form-error-color: #ff5f3f;
-    --button-primary-color: #fff;
+    --button-primary-color: #000d10;
     --button-secondary-color: #303131;
-    --button-primary-hover-color: #d5d3d4;
+    --button-primary-hover-color: #303131;
     --form-font-size-m: 22px;
     --form-font-size-s: 18px;
     --form-font-size-xs: 16px;
@@ -17,7 +17,7 @@
     --form-invalid-border-color: #ff5f3f;
     --form-input-padding: 0.75rem 0.6rem;
     --form-input-font-size: 1rem;
-    --form-input-disable-color: #111820;
+    --form-input-disable-color: #f0f0f0;
     --form-input-border-size: 1px;
     --form-input-border-color: var(--border-color);
     --form-input-background-color: var(--background-color-primary);
@@ -37,11 +37,11 @@
     --form-fieldset-legend-font-weight: var(--form-title-font-weight);
     --form-fieldset-legend-border: none;
     --form-fieldset-legend-padding: 0;
-    --form-button-color: #000d10;
+    --form-button-color: #fff;
     --form-button-font-size: var(--form-font-size-s);
     --form-button-background-color: var(--button-primary-color);
     --form-button-background-hover-color: var(--button-primary-hover-color);
-    --form-button-border: 1px solid #d5d3d4;
+    --form-button-border: 1px solid #000d10;
     --form-button-padding:15px 50px;
     --form-upload-color: var(--form-label-color);
     --form-upload-font-size: var(--form-font-size-xs);
@@ -50,7 +50,7 @@
     --form-width: 100%;
     --form-wizard-border: 0;
     --form-wizard-background-color: var(--background-color-primary);
-    --form-wizard-border-color: #303131;
+    --form-wizard-border-color: #d5d3d4;
     --form-wizard-number-color: var(--button-primary-color);
     --form-wizard-padding: 0px;
     --form-wizard-padding-bottom: 160px;
@@ -59,14 +59,14 @@
     --form-field-gap: 5px;
     
     /* Card styling variables */
-    --form-card-border-color: #303131;
+    --form-card-border-color: #d5d3d4;
     --form-card-border-radius: 4px;
     --form-card-padding: 0.6rem 0.8rem;
     --form-card-background: var(--background-color-primary);
     --form-card-shadow: 0 1px 2px rgb(0 0 0 / 3%);
     --form-card-hover-shadow: 0 2px 4px rgb(0 0 0 / 6%);
     --form-card-selected-border-color: var(--button-primary-color);
-    --form-card-selected-background: #111820;
+    --form-card-selected-background: #f0f0f0;
     --form-card-selected-shadow: 0 0 0 1px var(--button-primary-color);
     --form-card-transition: all 0.15s ease-in-out;
 }
@@ -173,12 +173,12 @@ main .form select {
 }
 
 main .form input:hover, main .form select:hover {
-    border-color: #d5d3d4;
+    border-color: #303131;
 }
 
 main .form input:focus,
 main .form select:focus {
-    outline: 1px solid #d5d3d4;
+    outline: 1px solid #000d10;
     outline-offset: 0;
 }
 
@@ -213,7 +213,7 @@ main .form textarea {
 }
 
 main .form textarea:focus {
-    outline: 1px solid #d5d3d4;
+    outline: 1px solid #000d10;
     outline-offset: 0;
 }
 
@@ -789,7 +789,7 @@ main .form form .checkbox-group-wrapper.horizontal .field-description {
 }
 
 main div.form-wrapper {
-    background: #000d10;
+    background: #fff;
     padding: 40px;
     border-radius: 0;
     box-shadow: none;
